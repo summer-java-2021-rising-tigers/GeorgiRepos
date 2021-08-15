@@ -7,6 +7,7 @@ public class MainMenuFrame{
 
 
     private static JFrame mainMenu = new JFrame();
+    private static JPanel mainMenuPanel = new JPanel();
     MainMenuBackground mainMenuBackground;
     MainMenuSinglePlayerButton singlePlayerButton;
     MainMenuMultiPlayerButton multiPlayerButton;
@@ -21,6 +22,11 @@ public class MainMenuFrame{
         mainMenu.setUndecorated(true);
         mainMenu.setLayout(null);
 
+        mainMenuPanel.setSize(Toolkit.getDefaultToolkit().getScreenSize());
+        mainMenuPanel.setLayout(null);
+
+        mainMenu.add(mainMenuPanel);
+
         mainMenuBackground = new MainMenuBackground();
         singlePlayerButton = new MainMenuSinglePlayerButton();
         multiPlayerButton = new MainMenuMultiPlayerButton();
@@ -28,12 +34,12 @@ public class MainMenuFrame{
         optionsButton = new MainMenuOptionsButton();
         quitButton = new MainMenuQuitButton();
 
-        mainMenu.add(quitButton);
-        mainMenu.add(optionsButton);
-        mainMenu.add(charactersButton);
-        mainMenu.add(multiPlayerButton);
-        mainMenu.add(singlePlayerButton);
-        mainMenu.add(mainMenuBackground);
+        mainMenuPanel.add(quitButton);
+        mainMenuPanel.add(optionsButton);
+        mainMenuPanel.add(charactersButton);
+        mainMenuPanel.add(multiPlayerButton);
+        mainMenuPanel.add(singlePlayerButton);
+        mainMenuPanel.add(mainMenuBackground);
 
         mainMenu.setVisible(true);
 
@@ -42,7 +48,7 @@ public class MainMenuFrame{
     //Метод чрез който се затваря MainMenuFrame-а
     public static void closeMenu(){
 
-        mainMenu.setVisible(false);
+        mainMenuPanel.setVisible(false);
 
     }
 

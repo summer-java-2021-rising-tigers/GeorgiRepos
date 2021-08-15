@@ -1,7 +1,6 @@
 package MainMenu;
 
-import MultiPlayerMenu.MultiPlayerMenuFrame;
-import SinglePlayerMenu.SinglePlayerMenuFrame;
+import MultiPlayerMenu.MultiPlayerMenuPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -35,7 +34,7 @@ public class MainMenuMultiPlayerButton extends JLabel implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         MainMenuFrame.closeMenu();
-        MultiPlayerMenuFrame multiplayerMenu = new MultiPlayerMenuFrame();
+        MultiPlayerMenuPanel multiplayerMenu = new MultiPlayerMenuPanel();
     }
 
     @Override

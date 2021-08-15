@@ -1,6 +1,6 @@
 package MainMenu;
 
-import OptionsMenu.OptionsMenuFrame;
+import OptionsMenu.OptionsMenuPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -34,7 +34,7 @@ public class MainMenuOptionsButton extends JLabel implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         MainMenuFrame.closeMenu();
-        OptionsMenuFrame optionsMenu = new OptionsMenuFrame();
+        OptionsMenuPanel optionsMenu = new OptionsMenuPanel();
     }
 
     @Override
