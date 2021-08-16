@@ -1,6 +1,5 @@
-package MainMenu;
+package SinglePlayerMenu;
 
-import CharactersMenu.CharactersMenuPanel;
 import MainFrame.MainFrame;
 
 import javax.swing.*;
@@ -8,7 +7,7 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-public class MainMenuCharactersButton extends JLabel implements MouseListener {
+public class SinglePlayerMenuBackButton extends JLabel implements MouseListener {
 
     //Взимане височината и дебелината на екрана
     Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -17,12 +16,12 @@ public class MainMenuCharactersButton extends JLabel implements MouseListener {
 
     //Смятам началната позиция на бутона
     int buttonXPos = width / 2 - 100;
-    int buttonYPos = height / 2 + 62;
+    int buttonYPos = height / 2 + 184;
 
-    MainMenuCharactersButton(){
+    SinglePlayerMenuBackButton(){
 
         this.setForeground(new Color(111,0,0));
-        this.setText("Characters");
+        this.setText("Back");
         this.setFont(new Font("Immortal",Font.BOLD,30));
         this.setBackground(Color.BLACK);
         this.setOpaque(false);
@@ -34,8 +33,8 @@ public class MainMenuCharactersButton extends JLabel implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        MainFrame.closeMainMenu();
-        MainFrame.openCharactersMenu();
+        MainFrame.closeSinglePlayerMenu();
+        MainFrame.openMainMenu();
     }
 
     @Override

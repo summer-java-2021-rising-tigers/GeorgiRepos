@@ -35,7 +35,7 @@ public class MainMenuMultiPlayerButton extends JLabel implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         MainFrame.closeMainMenu();
-        MultiPlayerMenuPanel multiplayerMenu = new MultiPlayerMenuPanel();
+        MainFrame.openMultiPlayerMenu();
     }
 
     @Override

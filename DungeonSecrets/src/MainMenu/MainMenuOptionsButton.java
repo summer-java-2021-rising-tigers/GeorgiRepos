@@ -35,7 +35,7 @@ public class MainMenuOptionsButton extends JLabel implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         MainFrame.closeMainMenu();
-        OptionsMenuPanel optionsMenu = new OptionsMenuPanel();
+        MainFrame.openOptionsMenu();
     }
 
     @Override
