@@ -1,6 +1,7 @@
 package MainMenu;
 
 import CharactersMenu.CharactersMenuPanel;
+import MainFrame.MainFrame;
 
 import javax.swing.*;
 import java.awt.*;
@@ -33,7 +34,7 @@ public class MainMenuCharactersButton extends JLabel implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        MainMenuFrame.closeMenu();
+        MainFrame.closeMainMenu();
         CharactersMenuPanel charactersMenu = new CharactersMenuPanel();
     }
 

@@ -3,15 +3,21 @@ package SinglePlayerMenu;
 import javax.swing.*;
 import java.awt.*;
 
-public class SinglePlayerMenuPanel {
+public class SinglePlayerMenuPanel extends JPanel {
 
-    JPanel singlePlayerMenu = new JPanel();
+    SinglePlayerMenuBackground background;
 
     public SinglePlayerMenuPanel(){
 
-        singlePlayerMenu.setSize(Toolkit.getDefaultToolkit().getScreenSize());
-        singlePlayerMenu.setLayout(null);
-        singlePlayerMenu.setVisible(true);
+        this.setSize(Toolkit.getDefaultToolkit().getScreenSize());
+        this.setLayout(null);
+
+        background = new SinglePlayerMenuBackground();
+
+        this.add(background);
+
+        this.setVisible(true);
+
 
     }
 

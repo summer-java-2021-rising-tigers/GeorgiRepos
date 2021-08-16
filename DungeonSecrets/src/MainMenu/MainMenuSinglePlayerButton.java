@@ -1,5 +1,6 @@
 package MainMenu;
 
+import MainFrame.MainFrame;
 import SinglePlayerMenu.SinglePlayerMenuPanel;
 
 import javax.swing.*;
@@ -35,8 +36,8 @@ public class MainMenuSinglePlayerButton extends JLabel implements MouseListener 
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        MainMenuFrame.closeMenu();
-        SinglePlayerMenuPanel singlePlayerMenu = new SinglePlayerMenuPanel();
+        MainFrame.closeMainMenu();
+        MainFrame.openSinglePlayerMenu();
     }
 
     @Override

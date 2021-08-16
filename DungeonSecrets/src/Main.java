@@ -1,11 +1,12 @@
-import MainMenu.MainMenuFrame;
+import MainFrame.MainFrame;
 
 public class Main {
 
 
     public static void main(String[] args) {
 
-        MainMenuFrame mainMenu = new MainMenuFrame();
+        //MainMenuPanel mainMenu = new MainMenuPanel();
+        MainFrame mainFrame = new MainFrame();
 
     }
 
