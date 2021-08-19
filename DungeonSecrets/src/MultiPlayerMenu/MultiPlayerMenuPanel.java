@@ -2,6 +2,7 @@ package MultiPlayerMenu;
 
 import javax.swing.*;
 import java.awt.*;
+import backEnd.utility.ScreenResolution;
 
 public class MultiPlayerMenuPanel extends JPanel{
 
@@ -11,7 +12,7 @@ public class MultiPlayerMenuPanel extends JPanel{
 
     public MultiPlayerMenuPanel(){
 
-        title.setBounds(540,0,200,50);
+        title.setBounds((ScreenResolution.getScreenWidth()/2)-100,0,200,50);
         title.setFont(new Font("Immortal",Font.BOLD,30));
         title.setHorizontalAlignment(JLabel.CENTER);
 

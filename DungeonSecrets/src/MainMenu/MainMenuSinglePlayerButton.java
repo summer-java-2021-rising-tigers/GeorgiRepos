@@ -1,7 +1,7 @@
 package MainMenu;
 
 import MainFrame.MainFrame;
-import SinglePlayerMenu.SinglePlayerMenuPanel;
+import frontEnd.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -37,7 +37,10 @@ public class MainMenuSinglePlayerButton extends JLabel implements MouseListener 
     @Override
     public void mouseClicked(MouseEvent e) {
         MainFrame.closeMainMenu();
-        MainFrame.openSinglePlayerMenu();
+//        MainFrame.openSinglePlayerMenu();
+        GameLayout mainLayout = new GameLayout();
+//        this.add(mainLayout);
+        this.repaint();
     }
 
     @Override
